@@ -1,19 +1,18 @@
 .top-sec {
-  padding-top: 180px;
   //background-color: #939;
   position: relative;
   z-index: 10;
   overflow: hidden;
+  padding-top: 180px;
   background-image: url('../img/bg-top-sec.svg');
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
 
 .top-sec__title {
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
 }
-
 
 .top-sec-info {
   display: flex;
@@ -24,50 +23,56 @@
 .top-sec-info__left {
   width: 50%;
 }
-.top-sec-info__title{
-  font-style: normal;
-  font-weight: 800;
+
+.top-sec-info__title {
   font-size: 20px;
-  margin-bottom: 18px;
+  font-weight: 800;
+  font-style: normal;
   line-height: 2.25;
-  color: #1E1E1E;
+  margin-bottom: 18px;
+  color: #1e1e1e;
 }
-.top-sec-info__list{
+
+.top-sec-info__list {
   margin: 0 0 53px 0;
   padding: 0;
 }
-.top-sec-info__item{
-  list-style: none;
-  padding-left: 30px;
-  position: relative;
-  font-weight: normal;
+
+.top-sec-info__item {
   font-size: 15px;
+  font-weight: normal;
+  position: relative;
   padding-bottom: 10px;
-  color: #1E1E1E;
+  padding-left: 30px;
+  list-style: none;
+  color: #1e1e1e;
   &::before {
-    content: '';
-    width: 13px;
-    height: 10px;
-    background-image: url('../img/ul.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
     top: 4px;
     left: 0;
+    width: 13px;
+    height: 10px;
+    content: '';
+    background-image: url('../img/ul.png');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
-.top-sec-info__ps{
-  font-weight: 800;
+
+.top-sec-info__ps {
   font-size: 15px;
+  font-weight: 800;
+  line-height: 1.67;
   max-width: 500px;
   margin-bottom: 32px;
-  line-height: 1.67;
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
-.top-sec-info__btn{
+
+.top-sec-info__btn {
   width: 100%;
   max-width: 350px;
 }
+
 //end #LEFT
 
 //begin #RIGHT
@@ -81,31 +86,32 @@
     width: 100%;
   }
 }
+
 //end #RIGHT
 
 //begin #FOOTER
-.top-sec-footer{
+.top-sec-footer {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
   align-items: center;
   padding-top: 70px;
+  padding-bottom: 40px;
 }
-.top-sec-footer__link{
+
+.top-sec-footer__link {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  font-weight: 800;
-  font-size: 15px;
-  line-height: 3;
   text-align: center;
-
-  color: #722D5C;
+  color: #722d5c;
   svg {
+    stroke: #8a2c5b;
     width: 12px;
     height: 12px;
-    stroke:#8A2C5B;
   }
 }
+
 //end #FOOTER
