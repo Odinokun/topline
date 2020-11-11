@@ -6,6 +6,9 @@ $(function() {
   // begin no-JS
   require('./modules/noJs')();
 
+  // begin accordion
+  require('./modules/accordion')();
+
   // begin Sticky header
   // require('./modules/stickyHeader')();
 
@@ -20,10 +23,5 @@ $(function() {
 
   // begin Popup
   // require('./modules/popup')();
-
-  // begin Animate.css
-  //РАБОТАЕТ ТОЛЬКО С JQUERY < 3.0.0 !!!!!!!!!!!!!!!!!!
-  // require('./modules/waypoints')();
-  // require('./modules/animateCss')();
 
 });

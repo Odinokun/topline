@@ -1,22 +1,23 @@
 extends ../_template
 
 block variables
-  - var title       = 'Index'
-  - var description = ''
-  - var ogtitle     = ''
-  - var ogimage     = ''
+  - var title       = 'Topline'
+  - var description = 'Topline'
 
-  - var pageHeaderTitle = ''
   - var breadcrumbs     = 'breadcrumbs link'
 
 block content
   .main-wrap.no-js
+    //include ../sections/anim-section
     include ../sections/header
 
     //begin content
     main.main.index
       include ../sections/top-section
       include ../sections/index-info
+      include ../sections/why-section
+      include ../sections/how-section
+      include ../sections/teacher-section
     //end content
 
     //include ../sections/footer

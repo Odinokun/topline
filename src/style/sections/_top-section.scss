@@ -1,12 +1,12 @@
 .top-sec {
-  //background-color: #939;
-  position: relative;
-  z-index: 10;
-  overflow: hidden;
-  padding-top: 180px;
+  padding-top: 65px;
   background-image: url('../img/bg-top-sec.svg');
   background-repeat: no-repeat;
   background-position: 50% 100%;
+
+  @include max(800) {
+    padding-top: 0;
+  }
 }
 
 .top-sec__title {
@@ -17,11 +17,20 @@
 .top-sec-info {
   display: flex;
   padding-top: 65px;
+
+  @include max(800) {
+    flex-direction: column;
+    padding-top: 0;
+  }
 }
 
 //begin #LEFT
 .top-sec-info__left {
   width: 50%;
+
+  @include max(800) {
+    width: 100%;
+  }
 }
 
 .top-sec-info__title {
@@ -34,7 +43,7 @@
 }
 
 .top-sec-info__list {
-  margin: 0 0 53px 0;
+  margin: 0 0 22px 0;
   padding: 0;
 }
 
@@ -71,6 +80,13 @@
 .top-sec-info__btn {
   width: 100%;
   max-width: 350px;
+
+  @include max(860) {
+    margin-bottom: 20px;
+  }
+  @include max(560) {
+    max-width: 100%;
+  }
 }
 
 //end #LEFT
@@ -78,6 +94,10 @@
 //begin #RIGHT
 .top-sec-info__right {
   width: 50%;
+
+  @include max(800) {
+    width: 100%;
+  }
 }
 
 .top-sec-info__pic {
@@ -95,7 +115,11 @@
   justify-content: center;
   align-items: center;
   padding-top: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 55px;
+
+  @include max(800) {
+    padding-top: 40px;
+  }
 }
 
 .top-sec-footer__link {
