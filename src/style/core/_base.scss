@@ -125,14 +125,21 @@ svg {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+
+  @include max(560) {
+    padding: 0 25px;
+  }
 }
 
 .title {
-  font-size: 33px;
   font-weight: 800;
   line-height: 1.52;
-  text-align: center;
   color: #1e1e1e;
+
+  @include responsive-font(33, 25);
+  @include max(560) {
+    line-height: 1.35;
+  }
   span {
     color: $brand;
   }
@@ -140,6 +147,8 @@ svg {
 
 .btn {
   font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
   line-height: 1;
   display: inline-flex;
   justify-content: center;
@@ -148,6 +157,7 @@ svg {
   padding: 10px 30px;
   cursor: pointer;
   user-select: none;
+  text-align: center;
   white-space: nowrap;
   text-decoration: none;
   color: #fff;
@@ -157,11 +167,9 @@ svg {
   background-image: linear-gradient(87.99deg, #4e2d5e 0%, #8a2c5b 100%);
   box-shadow: 0 20px 30px rgba(138, 44, 91, .15);
 
-
-
-  font-weight: 800;
-  font-size: 15px;
-  text-align: center;
+  @include max(374) {
+    font-size: 14px;
+  }
 
   &:hover {
     color: #fff;

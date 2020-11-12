@@ -6,8 +6,8 @@ $(function() {
   // begin no-JS
   require('./modules/noJs')();
 
-  // begin Sticky header
-  // require('./modules/stickyHeader')();
+  // begin accordion
+  require('./modules/accordion')();
 
   // begin phone mask
   // require('./modules/maskedinput')();
@@ -19,11 +19,6 @@ $(function() {
   // require('./modules/slick')();
 
   // begin Popup
-  // require('./modules/popup')();
-
-  // begin Animate.css
-  //РАБОТАЕТ ТОЛЬКО С JQUERY < 3.0.0 !!!!!!!!!!!!!!!!!!
-  // require('./modules/waypoints')();
-  // require('./modules/animateCss')();
+  require('./modules/popup')();
 
 });
