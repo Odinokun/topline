@@ -116,6 +116,9 @@ svg {
 }
 
 .main {
+  position: relative;
+  z-index: 1;
+
   flex-grow: 1;
 }
 
