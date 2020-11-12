@@ -1,0 +1,30 @@
+mixin index-info__item(text, pic, link)
+  //begin index-info-item
+  a(href="#" data-popup='popup-' + link).index-info__item.index-info-item.popup-open
+    .index-info-item__info
+      .index-info-item__text
+        span #{text}
+      .index-info-item__link
+        span.index-info-item__link-btn
+        span.index-info-item__link-text Подробнее
+    .index-info-item__pic
+      img(src="assets/img/index-info-pic-" + pic + ".svg" alt="picture")
+  //end index-info-item
+
+//begin index-info
+.index-info#index-info
+  .container
+    //begin index-info__list
+    .index-info__list
+      .index-info__title-item
+        h2.index-info__title.title Для владельцев и руководителей каких компаний полезна <span>онлайн-диагностика?</span>
+
+      +index-info__item('Вы опасаетесь обвинений в незаконном дроблении бизнеса', '01', '01')
+      +index-info__item('Вам нужно безболезненно, быстро, надёжно «обелить» имеющийся бизнес, чтобы избежать внимания со стороны налогового органа', '02', '02')
+      +index-info__item('Вы получили штраф или блокировку расчётного счета от ФНС или в рамках действия закона № 115-ФЗ', '03', '03')
+      +index-info__item('Вы готовы привлечь кредитные деньги в компанию. Банки СЕЙЧАС отказывают вашей компании', '04', '04')
+      +index-info__item('Вы исполнитель в госконтрактах и/или планируете участие в тендерах', '05', '05')
+      +index-info__item('Вы спрашиваете, как попасть в группу льготного налогообложения IT-бизнеса', '06', '06')
+      +index-info__item('Вы продаете/покупаете бизнес и желаете проверить «КОТА В МЕШКЕ». Вам необходим квалифицированный, опытный советник в лице Натальи Ненашевой', '07', '07')
+    //end index-info__list
+//end index-info

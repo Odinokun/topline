@@ -1,0 +1,17 @@
+// ===== main colors =====
+$brand: #8a2c5b;
+$highlight: #8a2c5b;
+$highlight-hov: darken($highlight, 5%);
+
+// ===== text colors =====
+$text: #1e1e1e;
+
+// ===== link colors =====
+$link: lighten($brand, 10%);
+$link-hov: lighten($link, 25%);
+
+// ===== transition =====
+$transition-hover: .3s ease-in-out;
+
+// ===== fonts =====
+$font: 'Inter', sans-serif;

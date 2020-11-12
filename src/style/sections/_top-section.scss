@@ -1,0 +1,142 @@
+.top-sec {
+  position: relative;
+  padding-top: 65px;
+  background-image: url('../img/bg-top-sec.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+
+  @include max(800) {
+    padding-top: 0;
+  }
+}
+
+.top-sec__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.top-sec-info {
+  display: flex;
+  padding-top: 65px;
+
+  @include max(800) {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
+
+//begin #LEFT
+.top-sec-info__left {
+  width: 50%;
+
+  @include max(800) {
+    width: 100%;
+  }
+}
+
+.top-sec-info__title {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 2.25;
+  margin-bottom: 18px;
+  color: #1e1e1e;
+}
+
+.top-sec-info__list {
+  margin: 0 0 22px 0;
+  padding: 0;
+}
+
+.top-sec-info__item {
+  font-size: 15px;
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  list-style: none;
+  color: #1e1e1e;
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 13px;
+    height: 10px;
+    content: '';
+    background-image: url('../img/ul.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.top-sec-info__ps {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.67;
+  max-width: 500px;
+  margin-bottom: 32px;
+  color: #1e1e1e;
+}
+
+.top-sec-info__btn {
+  width: 100%;
+  max-width: 350px;
+
+  @include max(860) {
+    margin-bottom: 20px;
+  }
+  @include max(560) {
+    max-width: 100%;
+  }
+}
+
+//end #LEFT
+
+//begin #RIGHT
+.top-sec-info__right {
+  width: 50%;
+
+  @include max(800) {
+    width: 100%;
+  }
+}
+
+.top-sec-info__pic {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+//end #RIGHT
+
+//begin #FOOTER
+.top-sec-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 55px;
+
+  @include max(800) {
+    padding-top: 40px;
+  }
+}
+
+.top-sec-footer__link {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #722d5c;
+  svg {
+    stroke: #8a2c5b;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+//end #FOOTER
