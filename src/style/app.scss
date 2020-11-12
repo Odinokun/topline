@@ -1,27 +1,24 @@
 // core
-@import 'core/fonts';
 @import 'core/variables';
 @import 'core/mixins';
 @import 'core/base';
 
 //elements
-//@import 'elements/burger';
-//@import 'elements/breadcrumbs';
-//@import 'elements/pagination';
-//@import 'elements/popup';
+@import 'elements/popup';
 //@import 'elements/slickBase';
 
 //main section
 @import 'sections/header';
-//@import 'sections/footer';
+@import 'sections/footer';
 
 //section
-@import 'sections/anim-section';
+@import 'sections/gradient-section';
 @import 'sections/top-section';
 @import 'sections/index-info';
 @import 'sections/why-section';
 @import 'sections/how-section';
 @import 'sections/teacher-section';
+@import 'sections/form-section';
 
 //pages
 @import 'pages/index';

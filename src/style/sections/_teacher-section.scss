@@ -9,9 +9,10 @@
 
 .teacher-sec__subtitle {
   font-weight: 800;
+  line-height: 1.5;
   text-align: center;
   color: #1e1e1e;
-  line-height: 1.5;
+
   @include responsive-font(33, 25);
 }
 
@@ -26,6 +27,7 @@
 
 .teacher-sec__item {
   display: flex;
+
   @include max(1000) {
     flex-direction: column;
   }
@@ -34,16 +36,17 @@
 .teacher-sec__pic {
   width: 50%;
   padding-right: 30px;
+
   @include max(1000) {
-    padding-right: 0;
     width: 100%;
+    padding-right: 0;
   }
   img {
     display: block;
     max-width: 100%;
+
     @include max(1000) {
       margin: 0 auto 20px;
-
     }
   }
 }
@@ -51,6 +54,7 @@
 .teacher-sec__info {
   width: 50%;
   padding-top: 15px;
+
   @include max(1000) {
     width: 100%;
   }
@@ -61,8 +65,8 @@
   padding: 0;
   li {
     font-size: 15px;
-    line-height: 1.7;
     font-weight: normal;
+    line-height: 1.7;
     position: relative;
     padding-bottom: 10px;
     padding-left: 30px;
@@ -101,31 +105,34 @@
 }
 
 //begin #HIDDEN
-.teacher-sec__item-hidden{
+.teacher-sec__item-hidden {
   display: none;
 }
-.teacher-sec__item-hidden-inn{
+
+.teacher-sec__item-hidden-inn {
   display: flex;
   padding-top: 70px;
+
   @include max(1000) {
-    padding-top: 30px;
     flex-direction: column;
+    padding-top: 30px;
   }
 }
-.teacher-sec__item-hidden-text{
+
+.teacher-sec__item-hidden-text {
   width: 50%;
+
   @include max(1000) {
     width: 100%;
   }
   span {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.67;
     display: block;
     margin-bottom: 30px;
-    font-weight: 300;
-    font-size: 15px;
-
-    line-height: 1.67;
-    color: #1E1E1E;
-    &:last-child{
+    color: #1e1e1e;
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -133,96 +140,102 @@
     font-size: 17px;
     font-weight: 500;
   }
-  &:first-child{
+  &:first-child {
     padding-right: 30px;
+
     @include max(1000) {
       padding-right: 0;
       padding-bottom: 30px;
     }
   }
-  &:last-child{
+  &:last-child {
     padding-left: 30px;
+
     @include max(1000) {
       padding-left: 0;
     }
   }
 }
+
 //end #HIDDEN
 
-
 //begin #FOOTER
-.teacher-sec__footer{
+.teacher-sec__footer {
   position: relative;
   height: 200px;
+
   @include max(1000) {
     height: 100px;
   }
   &.active {
-
-.teacher-sec__footer-open{
-  opacity: 0;
-  pointer-events: none;
-}
-.teacher-sec__footer-close{
-  opacity: 1;
-  pointer-events: auto;
-}
+    .teacher-sec__footer-open {
+      pointer-events: none;
+      opacity: 0;
+    }
+    .teacher-sec__footer-close {
+      pointer-events: auto;
+      opacity: 1;
+    }
   }
 }
-.teacher-sec__footer-open{
+
+.teacher-sec__footer-open {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
-  margin: auto;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 40px;
+  margin: auto;
   cursor: pointer;
   transition: $transition-hover;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   span {
-    font-weight: 800;
     font-size: 15px;
-    text-align: center;
-    color: #722D5C;
+    font-weight: 800;
     margin-bottom: 15px;
+    text-align: center;
+    color: #722d5c;
   }
   svg {
+    flex: none;
     stroke: #8a2c5b;
     width: 12px;
-    flex: none;
     height: 12px;
   }
 }
-.teacher-sec__footer-close{
+
+.teacher-sec__footer-close {
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  pointer-events: none;
-  margin: auto;
-  height: 40px;transition: $transition-hover;
-  cursor: pointer;
   right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 40px;
+  margin: auto;
+  cursor: pointer;
+  transition: $transition-hover;
+  pointer-events: none;
+  opacity: 0;
   span {
-    font-weight: 800;
     font-size: 15px;
-    text-align: center;
-    color: #722D5C;
+    font-weight: 800;
     margin-top: 15px;
+    text-align: center;
+    color: #722d5c;
   }
   svg {
+    flex: none;
     stroke: #8a2c5b;
     width: 12px;
-    flex: none;
-    transform: rotate(180deg);
     height: 12px;
+    transform: rotate(180deg);
   }
 }
+
 //end #FOOTER

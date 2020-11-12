@@ -1,6 +1,6 @@
 mixin index-info__item(text, pic, link)
   //begin index-info-item
-  a(href="#popup-" + link).index-info__item.index-info-item
+  a(href="#" data-popup='popup-' + link).index-info__item.index-info-item.popup-open
     .index-info-item__info
       .index-info-item__text
         span #{text}

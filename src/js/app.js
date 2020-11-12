@@ -9,9 +9,6 @@ $(function() {
   // begin accordion
   require('./modules/accordion')();
 
-  // begin Sticky header
-  // require('./modules/stickyHeader')();
-
   // begin phone mask
   // require('./modules/maskedinput')();
 
@@ -22,6 +19,6 @@ $(function() {
   // require('./modules/slick')();
 
   // begin Popup
-  // require('./modules/popup')();
+  require('./modules/popup')();
 
 });

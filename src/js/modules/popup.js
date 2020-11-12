@@ -5,13 +5,15 @@ module.exports = function() {
     e.preventDefault();
 
     let targetPopup = '#' + $(this).data('popup');
-    $(targetPopup + ', #popup__layer').fadeIn();
+    $('#popup__layer').fadeIn();
+    $(targetPopup).addClass('active');
   });
   // end popup open
 
   // begin popup close
   $('#popup__layer, .popup__close').on('click', function() {
-    $('.popup, #popup__layer').fadeOut();
+    $('#popup__layer').fadeOut();
+    $('.popup').removeClass('active');
   });
   // end popup close
 
