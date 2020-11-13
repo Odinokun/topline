@@ -187,6 +187,7 @@ svg {
   padding: 10px 30px;
   cursor: pointer;
   user-select: none;
+  transition: $transition-hover;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
@@ -195,7 +196,7 @@ svg {
   border-radius: 3px !important;
   background-color: $brand;
   background-image: linear-gradient(87.99deg, #4e2d5e 0%, #8a2c5b 100%);
-  box-shadow: 0 20px 30px rgba(138, 44, 91, .15);
+  box-shadow: 0 20px 30px rgba(138, 44, 91, 0);
 
   @include max(374) {
     font-size: 14px;
@@ -203,5 +204,6 @@ svg {
 
   &:hover {
     color: #fff;
+    box-shadow: 0 20px 30px rgba(138, 44, 91, .15);
   }
 }

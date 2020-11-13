@@ -59,6 +59,11 @@
 }
 
 .how-accordion__item {
+  &:first-child {
+    .how-accordion__body {
+      display: block;
+    }
+  }
   &:last-child {
     border-bottom: 1px dashed #8a2c5b;
   }

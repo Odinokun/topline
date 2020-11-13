@@ -1,0 +1,104 @@
+extends ../_template
+
+mixin subscribe-videos__item()
+  li.subscribe-videos__item
+    a(href="https://www.youtube.com/watch?v=SztlUWd83ao&app=desktop" data-fancybox="videos").subscribe-videos__link
+      .subscribe-videos__cover
+        img(src="assets/img/video-cover.jpg" alt="picture")
+        .subscribe-videos__play
+          img(src="assets/img/play-01.svg" alt="picture")
+          img(src="assets/img/play-02.svg" alt="picture")
+      .subscribe-videos__text
+        span Название показываем 3-4 ролика про компанию и про возможности
+
+block variables
+  - var title       = 'Topline'
+  - var description = 'Topline'
+
+  - var breadcrumbs     = 'breadcrumbs link'
+
+block content
+  .main-wrap.no-js
+    include ../sections/gradient-section
+    include ../sections/header
+
+    //begin content
+    main.main.subscribe
+      .container
+
+        //begin subscribe__info
+        .subscribe__info.subscribe-info
+          .subscribe-info__left
+            h2.subscribe-info__title <span>Подписывайтесь</span> на еженедельные новости компании «ТОП ЛАЙН»
+            ul.subscribe-info__list.custom-ul
+              li Дайджест публикаций
+              li Изменения в законодательствах
+              li Экспертные обзора и разборы ситуаций
+            button.subscribe-info__btn.btn Подписаться
+          .subscribe-info__pic
+            img(src="assets/img/subscribe.svg" alt="picture")
+        //end subscribe__info
+
+        //begin subscribe__links
+        .subscribe__links.subscribe-links
+          ul.subscribe-links__list
+            li.subscribe-links__item
+              a(href="https://1topline.ru/stati/" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-blog')
+                span.subscribe-links__text Блог Натальи Ненашевой
+
+            li.subscribe-links__item
+              a(href="https://www.instagram.com/nenasheva_natalya/" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-inst')
+                span.subscribe-links__text Инстаграм Натальи
+
+            li.subscribe-links__item
+              a(href="https://www.instagram.com/topline.cc/" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-inst')
+                span.subscribe-links__text Инстаграм «ТОП ЛАЙН»
+
+            li.subscribe-links__item
+              a(href="https://vk.com/public196282190" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-vk')
+                span.subscribe-links__text «ТОП ЛАЙН» ВКонтакте
+
+            li.subscribe-links__item
+              a(href="https://www.facebook.com/natalya.nenasheva.3" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-fb')
+                span.subscribe-links__text Facebook Натальи
+
+            li.subscribe-links__item
+              a(href="https://www.facebook.com/topline.cc" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-fb')
+                span.subscribe-links__text Facebook «ТОП ЛАЙН»
+
+            li.subscribe-links__item
+              a(href="https://www.youtube.com/watch?v=SztlUWd83ao&app=desktop" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-yt')
+                span.subscribe-links__text Youtube-канал
+
+            li.subscribe-links__item
+              a(href="https://vk.com/public196282190" target="_blank" rel="nofollow noopener noreferrer").subscribe-links__link
+                .subscribe-links__icon
+                  +svg('sub-vk')
+                span.subscribe-links__text «ТОП ЛАЙН» ВКонтакте
+        //end subscribe__links
+          
+        //begin subscribe__videos
+        .subscribe__videos.subscribe-videos
+          ul.subscribe-videos__list
+            +subscribe-videos__item()
+            +subscribe-videos__item()
+            +subscribe-videos__item()
+        //end subscribe__videos
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
