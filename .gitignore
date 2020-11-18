@@ -42,7 +42,7 @@ _template/
 node_modules/
 bower/
 bower_components/
-dist
+#dist
 build
 
 ### My files ###
