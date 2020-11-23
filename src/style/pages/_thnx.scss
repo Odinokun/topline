@@ -1,4 +1,4 @@
-.thnx {
+.newtopline-thnx {
   padding-top: 70px;
 
   @include max(800) {
@@ -6,11 +6,11 @@
   }
 }
 
-.thnx__header {
+.newtopline-thnx__header {
   margin-bottom: 35px;
 }
 
-.thnx__title {
+.newtopline-thnx__title {
   font-size: 55px;
   font-weight: 800;
   text-align: center;
@@ -22,7 +22,7 @@
   }
 }
 
-.thnx-info {
+.newtopline-thnx-info {
   display: flex;
   margin-bottom: 100px;
 
@@ -31,7 +31,7 @@
   }
 }
 
-.thnx-info__left {
+.newtopline-thnx-info__left {
   width: 50%;
   padding-top: 75px;
   padding-right: 50px;
@@ -43,7 +43,7 @@
   }
 }
 
-.thnx-info__title {
+.newtopline-thnx-info__title {
   font-size: 20px;
   font-weight: 800;
   line-height: 1.4;
@@ -51,7 +51,7 @@
   color: #1e1e1e;
 }
 
-.thnx-info__text {
+.newtopline-thnx-info__text {
   font-size: 15px;
   font-weight: normal;
   line-height: 1.67;
@@ -59,7 +59,7 @@
   color: #1e1e1e;
 }
 
-.thnx-info__btn {
+.newtopline-thnx-info__btn {
   width: 100%;
   max-width: 350px;
   margin-bottom: 50px;
@@ -70,7 +70,7 @@
   }
 }
 
-.thnx-info__pic {
+.newtopline-thnx-info__pic {
   width: 50%;
 
   @include max(1000) {

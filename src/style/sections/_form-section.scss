@@ -1,4 +1,4 @@
-.form-sec {
+.newtopline-form-sec {
   position: relative;
   padding-top: 65px;
   padding-bottom: 80px;
@@ -20,7 +20,7 @@
   }
 }
 
-.form-sec__title {
+.newtopline-form-sec__title {
   font-weight: 800;
   line-height: 1.52;
   max-width: 1100px;
@@ -32,7 +32,7 @@
 }
 
 //begin #ROW
-.form-sec__row {
+.newtopline-form-sec__row {
   display: flex;
   margin-bottom: 70px;
 
@@ -41,7 +41,7 @@
   }
 }
 
-.form-sec__info {
+.newtopline-form-sec__info {
   width: 50%;
   padding-top: 40px;
   padding-right: 40px;
@@ -52,14 +52,14 @@
   }
 }
 
-.form-sec__info-title {
+.newtopline-form-sec__info-title {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 45px;
   color: #fff;
 }
 
-.form-sec__info-list {
+.newtopline-form-sec__info-list {
   max-width: 600px;
   margin: 0 0 35px 0;
   padding: 0;
@@ -90,14 +90,14 @@
   }
 }
 
-.form-sec__info-ps {
+.newtopline-form-sec__info-ps {
   font-size: 20px;
   font-weight: 800;
   text-decoration: underline;
   color: #fff;
 }
 
-.form-sec__pic {
+.newtopline-form-sec__pic {
   width: 50%;
 
   @include max(1000) {
@@ -117,14 +117,14 @@
 //end #ROW
 
 //begin #FORM
-.form-sec-form {
+.newtopline-form-sec-form {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.form-sec-form__input,
-.form-sec-form__submit {
+.newtopline-form-sec-form__input,
+.newtopline-form-sec-form__submit {
   font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@
   }
 }
 
-.form-sec-form__input {
+.newtopline-form-sec-form__input {
   font-size: 15px;
   font-weight: 400;
   line-height: 1;
@@ -159,7 +159,7 @@
   @include placeholder-color(#fff);
 }
 
-.form-sec-form__submit {
+.newtopline-form-sec-form__submit {
   font-size: 15px;
   font-weight: 800;
   line-height: 1;

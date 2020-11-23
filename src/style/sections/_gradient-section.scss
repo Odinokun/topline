@@ -1,4 +1,4 @@
-.gradient-sec {
+.newtopline-gradient-sec {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,8 +8,8 @@
   background-color: #fff;
 }
 
-.circle-01,
-.circle-02 {
+.newtopline-circle-01,
+.newtopline-circle-02 {
   position: absolute;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   background-size: contain;
 }
 
-.circle-01 {
+.newtopline-circle-01 {
   top: -200px;
   left: -200px;
   width: 600px;
@@ -26,7 +26,7 @@
   background-image: url('../img/circle-01.png');
 }
 
-.circle-02 {
+.newtopline-circle-02 {
   top: 70%;
   left: 70%;
   width: 800px;

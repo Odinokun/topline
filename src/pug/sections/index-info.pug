@@ -1,23 +1,23 @@
 mixin index-info__item(text, pic, link)
   //begin index-info-item
-  a(href="#" data-popup='popup-' + link).index-info__item.index-info-item.popup-open
-    .index-info-item__info
-      .index-info-item__text
+  a(href="#" data-popup='popup-' + link).newtopline-index-info__item.newtopline-index-info-item.newtopline-popup-open
+    .newtopline-index-info-item__info
+      .newtopline-index-info-item__text
         span #{text}
-      .index-info-item__link
-        span.index-info-item__link-btn
-        span.index-info-item__link-text Подробнее
-    .index-info-item__pic
+      .newtopline-index-info-item__link
+        span.newtopline-index-info-item__link-btn
+        span.newtopline-index-info-item__link-text Подробнее
+    .newtopline-index-info-item__pic
       img(src="assets/img/index-info-pic-" + pic + ".svg" alt="picture")
   //end index-info-item
 
 //begin index-info
-.index-info#index-info
-  .container
+.newtopline-index-info#index-info
+  .newtopline-container
     //begin index-info__list
-    .index-info__list
-      .index-info__title-item
-        h2.index-info__title.title Для владельцев и руководителей каких компаний полезна <span>онлайн-диагностика?</span>
+    .newtopline-index-info__list
+      .newtopline-index-info__title-item
+        h2.newtopline-index-info__title.newtopline-title Для владельцев и руководителей каких компаний полезна <span>онлайн-диагностика?</span>
 
       +index-info__item('Вы опасаетесь обвинений в незаконном дроблении бизнеса', '01', '01')
       +index-info__item('Вам нужно безболезненно, быстро, надёжно «обелить» имеющийся бизнес, чтобы избежать внимания со стороны налогового органа', '02', '02')

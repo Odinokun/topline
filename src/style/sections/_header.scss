@@ -1,4 +1,4 @@
-.header {
+.newtopline-header {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -15,7 +15,7 @@
   }
 }
 
-.header__logo {
+.newtopline-header__logo {
   @include max(800) {
     margin-bottom: 15px;
   }
@@ -25,7 +25,7 @@
   }
 }
 
-.header__info {
+.newtopline-header__info {
   font-size: 16px;
   text-align: right;
   color: #1e1e1e;
