@@ -1,19 +1,19 @@
 module.exports = function() {
 
   // begin popup open
-  $('.popup-open').on('click', function(e) {
+  $('.newtopline-popup-open').on('click', function(e) {
     e.preventDefault();
 
     let targetPopup = '#' + $(this).data('popup');
     $('#popup__layer').fadeIn();
-    $(targetPopup).addClass('active');
+    $(targetPopup).addClass('newtopline-active');
   });
   // end popup open
 
   // begin popup close
-  $('#popup__layer, .popup__close, .popup__btn').on('click', function() {
+  $('#popup__layer, .newtopline-popup__close, .newtopline-popup__btn').on('click', function() {
     $('#popup__layer').fadeOut();
-    $('.popup').removeClass('active');
+    $('.newtopline-popup').removeClass('newtopline-active');
   });
   // end popup close
 

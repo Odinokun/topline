@@ -1,4 +1,4 @@
-.top-sec {
+.newtopline-top-sec {
   position: relative;
   padding-top: 65px;
   background-image: url('../img/bg-top-sec.svg');
@@ -8,18 +8,18 @@
   @include max(800) {
     padding-top: 0;
   }
-  .container {
+  .newtopline-container {
     display: flex;
     flex-direction: column;
   }
 }
 
-.top-sec__title {
+.newtopline-top-sec__title {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.top-sec-info {
+.newtopline-top-sec-info {
   display: flex;
   padding-top: 65px;
 
@@ -30,7 +30,7 @@
 }
 
 //begin #LEFT
-.top-sec-info__left {
+.newtopline-top-sec-info__left {
   width: 50%;
 
   @include max(800) {
@@ -38,7 +38,7 @@
   }
 }
 
-.top-sec-info__title {
+.newtopline-top-sec-info__title {
   font-size: 20px;
   font-weight: 800;
   font-style: normal;
@@ -47,7 +47,7 @@
   color: #1e1e1e;
 }
 
-.top-sec-info__ps {
+.newtopline-top-sec-info__ps {
   font-size: 15px;
   font-weight: 800;
   line-height: 1.67;
@@ -56,7 +56,7 @@
   color: #1e1e1e;
 }
 
-.top-sec-info__btn {
+.newtopline-top-sec-info__btn {
   width: 100%;
   max-width: 350px;
   margin-bottom: 25px;
@@ -66,7 +66,7 @@
   }
 }
 
-.top-sec-info__list {
+.newtopline-top-sec-info__list {
   margin: 0;
   padding: 0;
 
@@ -75,7 +75,7 @@
   }
 }
 
-.top-sec-info__item {
+.newtopline-top-sec-info__item {
   font-size: 15px;
   font-weight: normal;
   position: relative;
@@ -99,7 +99,7 @@
 //end #LEFT
 
 //begin #RIGHT
-.top-sec-info__right {
+.newtopline-top-sec-info__right {
   width: 50%;
 
   @include max(800) {
@@ -107,7 +107,7 @@
   }
 }
 
-.top-sec-info__pic {
+.newtopline-top-sec-info__pic {
   img {
     display: block;
     width: 100%;
@@ -117,7 +117,7 @@
 //end #RIGHT
 
 //begin #FOOTER
-.top-sec-footer {
+.newtopline-top-sec-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +129,7 @@
   }
 }
 
-.top-sec-footer__link {
+.newtopline-top-sec-footer__link {
   font-size: 15px;
   font-weight: 800;
   line-height: 3;
